@@ -1,0 +1,28 @@
+.footer {
+    height: 435px;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(243,127,41,255);
+      color: white;
+      text-align: center;
+  
+    }
+  
+    .col{ 
+        height: 300px;
+        text-align: center;
+        line-height: 30px;
+        margin-top: 10%;
+        color: rgb(85, 45, 13);
+        
+  
+    }
+    h1{
+        font-size: 25px;
+        color: black;
+    }
+     
+    p{
+      font-size: 20px;
+    }

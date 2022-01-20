@@ -1,0 +1,19 @@
+
+body {
+    height: 100%;
+}
+
+.header{
+    
+    background-image: url(../../assets/img/fireplace.png);
+    
+    background-position:top;
+    background-size: cover;
+    height: 600px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    opacity: 97%;
+    margin-bottom: 200px;
+}
