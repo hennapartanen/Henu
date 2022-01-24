@@ -4,12 +4,10 @@
   <div class="alert alert-danger" *ngIf="error">
     <p>{{error}}</p>
   </div>
-  <h3> {{ isLoginMode ?  'Login' : 'Register'}}</h3>
-  <div *ngIf="isLoading">
-    <app-loading-spinner></app-loading-spinner>
-  </div>
+  <h3>Login</h3>
+ 
   
-  <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" *ngIf="!isLoading">
+  <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)" >
   
   
       <div class="form-group">

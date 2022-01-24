@@ -19,7 +19,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AuthComponent } from './auth/auth.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomepageComponent } from './homepage/homepage.component';
-import { LoadingSpinnerComponent } from './auth/loading-spinner/loading-spinner.component';
+
 import { FormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
 
@@ -34,7 +34,7 @@ import {HttpClientModule} from '@angular/common/http';
     FooterComponent,
     AuthComponent,
     HomepageComponent,
-    LoadingSpinnerComponent
+ 
 
   ],
   imports: [
