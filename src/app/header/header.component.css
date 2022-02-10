@@ -5,11 +5,11 @@ body {
 
 .header{
     
-    background-image: url(../../assets/img/fireplace.png);
-    
+    background-image: url(../../assets/img/re.jpg);
+
     background-position:top;
     background-size: cover;
-    height: 600px;
+    height: 400px;
     display: flex;
     position: relative;
     align-items: center;

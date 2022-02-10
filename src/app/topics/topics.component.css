@@ -1,0 +1,28 @@
+.card {
+    margin-bottom: 1rem;
+    padding: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 18px;
+
+    -moz-box-shadow: 7px 7px 56px -24px rgba(0,0,0,0.57);
+    box-shadow: 7px 7px 56px -24px rgb(0 0 0 / 57%);
+}
+
+
+h5 {
+    display: block;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+@media only screen and (min-width: 1200px) {
+    .card {
+        float: left;
+        position: absolute;
+        top: 80px;
+        max-width: 15rem;
+        max-height: 15rem;
+        
+    }
+  }

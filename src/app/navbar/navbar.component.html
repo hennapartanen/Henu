@@ -1,17 +1,33 @@
-<mat-toolbar   fxLayout="row" >
-    <span fxFlex></span>
-     <button mat-button *ngFor="let item of menuItems" fxHide.sm>
-         {{item.label}}
-     </button>
-     <button mat-icon-button [matMenuTriggerFor]="dropMenu" fxHide fxShow.sm>
-         <mat-icon>menu</mat-icon>
-     </button>
-     <mat-menu #dropMenu="matMenu">
-         <ng-container *ngFor="let item of menuItems">
-             <button mat-menu-item>
-                 {{item.label}}
-             </button>
-             <mat-divider></mat-divider>
-         </ng-container>
-     </mat-menu>
- </mat-toolbar>
+<div style="height: 0vh;">
+    <mat-toolbar >
+      <mat-toolbar-row>
+        <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+          <mat-icon>menu</mat-icon>
+        </button>
+        <span class="menu-spacer"></span>
+        <div fxShow="true" fxHide.lt-md>
+          <a  (click)="goDown1()" mat-button>Galleria</a>
+          <a  mat-button>Tarjoukset</a>
+          <a (click)="goDown2()" mat-button>Palvelut</a>
+          <a  (click)="goDown4()" mat-button>Verkkokauppa</a>
+          <a  (click)="goDown3()" mat-button>Yhteystiedot</a>
+
+        </div>
+      </mat-toolbar-row>
+    </mat-toolbar>
+  
+    <mat-sidenav-container fxFlexFill>
+      <mat-sidenav #sidenav>
+        <mat-nav-list>
+            <a (click)="sidenav.toggle()" href="" mat-list-item></a>
+          <a  (click)="goDown1()" mat-list-item>Galleria</a>
+          <a (click)="goDown2()" mat-list-item>Palvelut</a>
+          <a (click)="goDown4()"  mat-list-item>Verkkokauppa</a>
+          <a (click)="goDown3()" mat-list-item>Yhteystiedot</a>
+
+        </mat-nav-list>
+      </mat-sidenav>
+     
+    </mat-sidenav-container>
+  </div>
+  

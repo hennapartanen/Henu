@@ -1,0 +1,11 @@
+<div id="itemswrapper"> 
+  <button>Galleriaa</button>
+    <a style="cursor: pointer;" [routerLink]="[index]" routerLinkActive="active" > 
+      <img [src]="item.imagePath"  alt="{{ item.name }}"  
+      class="img-responsive" style="height: 300px;"> 
+      
+      <h4>{{ item.name }}</h4> 
+      <p >{{ item.description }}</p> 
+  </a> 
+  
+</div>
