@@ -1,97 +1,62 @@
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-auto">
-            <div class="card flex-row " style="width: 45rem;">
-                <img id="img" class="card-img-left" src="assets/img/limppu.png">
-                <div class="card-body" style="background-color: #fe852b; ">
-                    <div class="card-body" style="text-align: center;">
-                        <h2 class="card-title">LIMPPU</h2>
-                        <h4 class="card-title">Liesileivinuuni</h4>
-                        <p class="card-text">Tehokas lämmittäjä ja hyvä paistaja. Hellanluukku 230 x 385 mm.
-                            Leivinluukku
-                            410 x
-                            180/230 mm. Leivinuunin leveys 400 mm, syvyys 450 mm ja korkeus 240 mm
-                        </p>
-                    </div>
-                </div>
-                <ul class="list-group">
-                    <li class="list-group-item">
-                        <p>Leveys: 980mm, 1040mm</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Syvyys: 640mm</p>
-                    </li>
-                    <li class="list-group-item">
-                        <p>Korkeus: 930mm</p>
-                    </li>
 
-                    <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-dark btn-block">GALLERIAAN!</a>
-                    </div>
-                </ul>
-            </div>
+<div id="targetGalleria"> </div>
+    <div class="container">
+    <div  class="row justify-content-center" style="background-image: url(assets/img/fireplace.jpg); 
+    background-position:bottom;
+    background-size: cover;">
+        <div class="col-md-auto ">
+            <h2>TULISIJAT</h2>
+            <p>Yksilölliset mittatilaustulisijat</p>
+            <p>Varaavat tulisijat</p>
+            <p>Pönttöuunit</p>
+            <a routerLink="/gallery" class="btn btn-lg btn-dark " >Galleria</a>
+        </div>
+
+    </div>
+
+
+        <router-outlet></router-outlet>
+    
+
+    <div id="targetPalvelut"> </div>
+    <div class="row justify-content-center" id="targetpalvelut" style="background-color:#3C424C;">
+        <div  class="col-md-auto ">
+            <h2>Korjaukset</h2>
+            <p>Tulisijakorjaukset</p>
+            <p>Hormikorjaukset</p>
+            <a class="btn btn-lg btn-dark ">Korjaukset</a>
         </div>
     </div>
-    <br>
-    <div class="row justify-content-center">
-        <div class="col-md-auto">
-            <div class="card flex-row" style="width: 32rem;">
-                <img id="img" class="card-img-left" src="assets/img/tyttiL.png">
-                <div class="card-body" style="background-color: #fe852b; ">
-                    <div class="card-body" style="text-align: center;">
-                        <h2 class="card-title">TYTTI L</h2>
-                        <h4 class="card-title">Takkaleivinuuni suoralla luukulla</h4>
-                        <p class="card-text">Erinomainen paisto ja ruoanvalmistus ominaisuuksiltaan. Takkaluukku 410 x
-                            410mm,
-                            leivinluukku 410 x 180 / 230mm</p>
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <p>Leveys: 5000mm</p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>Syvyys: 100000mm</p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>Korkeus: 1000mm</p>
-                        </li>
-                    </ul>
-                    <div class="d-grid gap-2">
-                        <a href="#" class="btn btn-block btn-dark">GALLERIAAN!</a>
-                    </div>
-                </div>
-            </div>
+
+
+
+    <div class="row justify-content-center" style="background-color:#3C424C;">
+        <div class="col-md-auto ">
+            <h2>Remontit</h2>
+            <p>Mökki– ja huoneistoremontit</p>
+            <p>Sauna- ja kylpyhuoneremontit</p>
+            <p>Kattoremontit</p>
+            <a href=" #" class="btn btn-lg btn-dark ">Remontit</a>
         </div>
-
-        <div class="col-md-auto">
-            <div class="card flex-row" style="width: 32rem;">
-                <img id="img" class="card-img-left" src="assets/img/kiuas.png">
-                <div class="card-body" style="background-color: #fe852b; ">
-                    <div class="card-body" style="text-align: center;">
-                        <h2 class="card-title">KIUAS</h2>
-                        <h4 class="card-title">Kiuas</h4>
-                        <p class="card-text">Löylynautinto parhaimmillaan! Löyly on kosteaa, happirikasta ja pehmeää.
-                            Paljon eri
-                            koko vaihtoehtoja saatavilla!
-                        </p>
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">
-                            <p>Leveys: 540mm</p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>Syvyys: 540mm</p>
-                        </li>
-                        <li class="list-group-item">
-                            <p>Korkeus: 930mm</p>
-                        </li>
-
-                        <div class="d-grid gap-2">
-                            <a href="#" class="btn btn-dark btn-block">GALLERIAAN!</a>
-                        </div>
-                    </ul>
-                </div>
-            </div>
+    </div>
+    <div class="row justify-content-center" style="background-color:#3C424C;">
+        <div class="col-md-auto ">
+            <h2>Muut Palvelut</h2>
+            <p>Piipunpellitykset</p>
+            <p>Sadehatut</p>
+            <p>Kattoturvatuotteet</p>
+            <a href=" #" class="btn btn-lg btn-dark ">Muut Palvelut</a>
+        </div>
+    </div>
+    
+    <div id="targetVerkkokauppa"> </div>
+    <div class="row justify-content-center"  style="background-color:#3C424C;">
+        <div class="col-md-auto ">
+            <h2>Verkkokauppa</h2>
+            <p>Kaminat</p>
+            <p>Valmistulisijat</p>
+            <p>Hormistot</p>
+            <a href=" https://www.eurotulisijat.fi/fi " class="btn btn-lg btn-dark ">Verkkokauppaan</a>
         </div>
     </div>
 </div>

@@ -4,21 +4,38 @@ mat-toolbar {
     justify-content: space-between;
     height: 3rem;
     width: 100%;
-    background-color: #fe852b;
-    color: #212529;
     font-size: 25px;
     font-size: 15px;
     position: fixed;
     z-index: 1000; 
-
     background-color: var(--navbar-scroll);
+    color: white !important;
     transition: background-color 1s ease;
     color: var(--navbar-scroll-text);
     -webkit-box-shadow: var(--navbar-scroll-shadow);
     box-shadow: var(--navbar-scroll-shadow);
    
+  
   }
-  .mat-button {
-      font-size: 20px;
-      margin-right: 15px;
+mat-sidenav{
+    position: fixed;
+    background-color: #FC842B;
+    transition: background-color 1s ease;
+  
+   height: 250px;
+
+
+}
+  .menu-spacer {
+    flex: 1 1 auto;
   }
+  
+
+  .mat-button{
+    font-size: 20px;
+
+}
+
+a:hover{
+  color: #696969;
+}
